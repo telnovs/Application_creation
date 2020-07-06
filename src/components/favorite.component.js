@@ -8,7 +8,7 @@ export class FavoriteComponent extends Component {
     //присваеваем локальной переменной options)
     this.loader = options.loader
   }
-  input(){
+  init(){
     //добовляем прослушку событий
     this.$el.addEventListener('click',linkClickHandler.bind(this))
   }
@@ -41,13 +41,13 @@ async function linkClickHandler(event){
    }
   }
 
-function rendorList(list =[]){
+function rendorList(list=[]){
 
-  if (list = []){
+  if ( list && list.length){
     return `
     <ul>
     //пробегаемся по массиву лист с помощью map  прообразовываем строку 
-    ${list.map(i =>`,<li><a href = "#" class="js-link">${i}</a></li>`)}
+    ${list.map(i =>`,<li><a href = "#" class="js-link">${i}</a></li>`).join(' ')}
     </ul>
     `
   }

@@ -4,12 +4,12 @@
         this.url =baseUrl
     }
     //метод для создание нового синхроного метода для создание поста
-   async creatPost(post){
+   async createPost(post){
         try {
             // создаем переменую с присвоением Интерфейса Request из Fetch API является запросом ресурсов или данных.
             const  request = new Request(this.url + '/posts.json',{
                 method : 'post',
-                body : JSON.stringify('post')
+                body : JSON.stringify(post)
             })
             //повторные строку
             return useRequest(request)
