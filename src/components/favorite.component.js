@@ -15,7 +15,7 @@ export class FavoriteComponent extends Component {
   onShow(){
     //показывакем список избранных элементов
     const favorites = JSON.parse(localStorage.getItem('favorites'))
-    const html = rendorList(favorites)
+    const html = renderList(favorites)
     //добовляем html
      this.$el.insertAdjacentHTML('afterbegin',html)
   }
@@ -41,7 +41,7 @@ async function linkClickHandler(event){
    }
   }
 
-function rendorList(list=[]){
+function renderList(list=[]){
 
   if ( list && list.length){
     return `

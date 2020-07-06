@@ -1,6 +1,7 @@
 // создаем класс для наследование  и  экспортируем его
 export  class Component {
     // конструктор принимает id
+    $el;
     constructor(id) {
         this.$el.document.getElementById(id)
            this.init()

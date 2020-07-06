@@ -43,9 +43,9 @@ export class Form {
 
 function setError($control){
     // очищаем ошибку если она была
-    claerError($control)
+    clearError($control)
     //создаем переменную
-    const error = '<p class="valodation-error">Ввидите корректное значение</p>'
+    const error = '<p class="validation-error">Ввидите корректное значение</p>'
     //добавляем класс invalid.что ба контрол подсветился красным светом
     $control.classList.add('invalid')
     //вызываем метод и вставляем html
@@ -57,6 +57,6 @@ function clearError($control){
     $control.classList.remove('invalid')
     //проверка на нулл
     if($control.nextSibling){
-        $control.closest('.from-conrol').removeChild($control.nextSibling)
+        $control.closest('.form-control').removeChild($control.nextSibling)
     }
 }

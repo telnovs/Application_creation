@@ -21,8 +21,8 @@ export class CreateComponent extends Component {
     this.form = new Form(this.$el,{
       //  в массиве мы укажем валидаторы которые необходими применить к текущим контролам
       //делаем проверку с помощью класса Validators ссылаемся на него. а не делаем вызов
-      title :[Valodators.required],
-      fulltext : [Valodators.required,Validators.minLength(10)]
+      title :[Validators.required],
+      fulltext : [Validators.required,Validators.minLength(10)]
     })
   }
 }

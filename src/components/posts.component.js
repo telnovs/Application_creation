@@ -17,9 +17,9 @@ export class PostsComponent extends Component {
   async onShow(){
     //показываем загрузку
     this.loader.show()
-    const fbdata = await apiService.fetchPosts()
+    const fbData = await apiService.fetchPosts()
     // для вывода обьетка с сервеса
-    const posts = TransformService.fbObjectToArray(fbdata)
+    const posts = TransformService.fbObjectToArray(fbData)
     //для вывода поста
     const html =posts.map(post =>renderPost(post,{withButton:true}))
     // скрываем загрузку после получения постов

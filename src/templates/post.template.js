@@ -1,3 +1,5 @@
+
+
 export function renderPost(post, options = {}) {
     const tag = post.type === 'news'
         ? '<li class="tag tag-blue tag-rounded">Новость</li>'
