@@ -1,7 +1,6 @@
 {
   "presets": [
-    ["@babel/preset-evn",
-    {
+    ["@babel/preset-env", {
       "targets": [
         "last 5 versions"
       ]

@@ -1,6 +1,6 @@
 import { Component } from '../core/component'
 import {apiService} from '../services/api.service'
-import {TransformService} from '../services/Transform.service.js'
+import {TransformService} from '../services/transform.service.js'
 
 
 export class PostsComponent extends Component {

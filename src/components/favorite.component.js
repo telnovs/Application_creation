@@ -2,9 +2,18 @@ import { Component } from '../core/component'
 import {apiService} from '../services/api.service'
 import { renderPost } from '../templates/post.template'
 
+
+
+// export class FavoriteComponent extends Component {
+//   constructor(id) {
+//     super(id)
+//   }
+// }
+
 export class FavoriteComponent extends Component {
   constructor(id,options) {
     super(id)
+
     //присваеваем локальной переменной options)
     this.loader = options.loader
   }
@@ -46,7 +55,7 @@ function renderList(list=[]){
   if ( list && list.length){
     return `
     <ul>
-    //пробегаемся по массиву лист с помощью map  прообразовываем строку 
+    //пробегаемся по массиву лист с помощью map  прообразовываем строку
     ${list.map(i =>`,<li><a href = "#" class="js-link">${i}</a></li>`).join(' ')}
     </ul>
     `

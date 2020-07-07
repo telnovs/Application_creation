@@ -1,7 +1,7 @@
 import { Component } from '../core/component'
-import  {Form} from '../core/form'
-import {Validators} from '../core/valodators'
-import { apiService} from '../services/api.service'
+import { Form } from '../core/form'
+import { Validators } from '../core/valodators'
+import { apiService } from '../services/api.service'
 
 
 export class CreateComponent extends Component {
@@ -26,7 +26,7 @@ export class CreateComponent extends Component {
     })
   }
 }
-  // cоздаем функию submitHandler
+ // создаем функию submitHandler
 
 async  function submitHandler(event){
     // отменяем дефотное поведение

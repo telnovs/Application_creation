@@ -16,8 +16,8 @@ export class Form {
         return value
     }
     //данныый метод возвращаяет булеан значение
-    isValid(){
-        let isFormValid = true
+    isValid () {
+        let isFormValid  = true
 
         Object.keys(this.controls).forEach(control =>{
             //получаем список валидаторов
@@ -27,7 +27,7 @@ export class Form {
             // пробегаемся по массиву где каждая функцией валидатором
             validators.forEach(validator=>{
                 //проверяем валидны ли текущий control
-                isValid = validator(this.form[control]) && isValid
+                isValid = validator(this.form[control].value) && isValid
 
             })
             //делаем проверку если не валидный контрол мы вызываем функцию setError
