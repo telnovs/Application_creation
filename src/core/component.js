@@ -3,7 +3,7 @@ export  class Component {
     // конструктор принимает id
     constructor(id) {
         this.$el = document.getElementById(id)
-           this.init()
+        this.init()
         }
 
      // создаем пустой метод

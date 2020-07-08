@@ -15,7 +15,7 @@ export class FavoriteComponent extends Component {
     super(id)
 
     //присваеваем локальной переменной options)
-    this.loader = options.loader
+    this.loader = options.loader;
   }
   init(){
     //добовляем прослушку событий
