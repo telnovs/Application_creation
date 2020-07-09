@@ -12,7 +12,7 @@ export class HeaderComponent extends Component {
 }
 
  function buttonHandler(){
-    /// создаем для того чтобы узнать были ли мы на сайте или нет
+    // создаем для того чтобы узнать были ли мы на сайте или нет
      localStorage.setItem('visired',JSON.stringify(true))
     this.hide()
  }

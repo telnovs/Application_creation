@@ -39,7 +39,7 @@ async  function submitHandler(event){
         //создаем  текущую дату создание поста
         data : new Date().toLocaleDateString(),
         ///делаем спред оператор
-        ...this.from.value()
+        ...this.form.value()
       }
       //ждем apiService
       await apiService.createPost(formData)
